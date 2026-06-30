@@ -343,6 +343,7 @@ body {
   padding-top: 180px;
   padding-bottom: 40px;
   gap: 20px;
+  align-items: start;
 }
 
 .footer__address {
