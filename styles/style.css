@@ -5,8 +5,9 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
   width: 1100px;
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .header__menu {
@@ -15,6 +16,11 @@
 }
 
 .header__links-list-item_no-bullit {
+  text-decoration: none;
+  list-style: none;
+}
+
+.link__glavnoe{
   text-decoration: none;
   list-style: none;
 }
@@ -35,9 +41,8 @@
   width: 148px;
 }
 
-.header__address {
+.address {
   max-width: 200px;
-  height: 98px;
   font-style: normal;
   justify-self: end;
   display: flex;
@@ -49,8 +54,7 @@
 
 .cover {
   position: relative;
-  min-height: 500px;
-  background: url('/images/cover.jpg');
+  background: url(/images/cover.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -59,7 +63,7 @@
   justify-content: space-between;
   line-height: normal;
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
 }
 
 .overlay {
@@ -75,7 +79,7 @@
 .cover__title,
 .cover__description {
   position: relative;
-  z-index: 2;
+ 
 }
 
 .cover__title {
@@ -86,6 +90,7 @@
   gap: 20px;
   padding-top: 165px;
   letter-spacing: 30%;
+  z-index: 2;
 }
 
 .aligned-text {
@@ -94,15 +99,15 @@
 }
 
 .aligned-text_left {
-  padding-left: 50px;
+  text-align: left;
 }
 
 .aligned-text_center {
-  padding-left: 380.5px;
+  text-align: center;
 }
 
 .aligned-text_right {
-  padding-left: 663px;
+  text-align: right;
 }
 
 .cover__description {
@@ -133,16 +138,16 @@
   color: #fff;
   border: 1px solid #fff;
   width: 256px;
-  height: 51px;
+  min-height: 51px;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
-  z-index: 2;
   margin-right: 50px;
 }
 
 /* ========== ЛОТЫ ========== */
+
 .lots {
   padding-top: 180px;
   display: grid;
@@ -157,33 +162,28 @@
   padding-top: 48px;
   text-decoration: underline;
   text-transform: uppercase;
+  position: relative;
 }
 
-.card__text__film {
+.card-text {
   color: #FFFFFF;
-  padding-top: 274px;
-  line-height: 120%;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 20px;
+  line-height: 120%;
+  position: relative;
 }
 
-.card__text__book {
-  color: #FFFFFF;
+.card__book{
   padding-top: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-size: 20px;
-  line-height: 120%;
 }
 
-.card-text__picture {
-  color: #FFFFFF;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-size: 20px;
+.card__picture {
   padding-top: 126px;
-  line-height: 120%;
+}
+
+.card__film {
+  padding-top: 274px;
 }
 
 .lots__card-list {
@@ -194,6 +194,7 @@
   gap: 25px;
   padding-left: 24px;
   padding-right: 24px;
+  flex-wrap: wrap;
 }
 
 .lots__heading {
@@ -205,41 +206,28 @@
 .lots__card-list-item {
   min-height: 596px;
   width: 334px;
-  background-size: cover;
-  background-position: center;
-}
-
-.card-link {
-  height: 100%;
 }
 
 .card {
   height: 100%;
+  position: relative;
+  background-position: 50% center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card_type_film {
   background-image: url(/images/card-lot-01.jpg);
-  position: relative;
-  background-position: 50% center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_book {
   background-image: url(/images/card-lot-02.jpg);
-  position: relative;
-  background-position: 50% center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_picture {
   background-image: url(/images/card-lot-03.jpg);
-  position: relative;
-  background-position: 50% center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
+
 
 .lots__look-more-link {
   text-decoration: underline;
@@ -265,7 +253,7 @@
 
 .about__logo {
   width: 240px;
-  height: 240px;
+  min-height: 240px;
   background: #000;
   border-radius: 50%;
   display: flex;
@@ -314,28 +302,9 @@
   min-width: 1100px;
 }
 
-.footer__address {
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  width: 264px;
-  height: 98px;
-  padding-left: 50px
-}
-
-.footer__address a {
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.footer__address p {
-  font-size: 18px;
-}
-
 .footer__menu {
   justify-self: center;
   width: 163px;
-  height: 64px;
 }
 
 .footer__menu-list {
@@ -355,7 +324,6 @@
   gap: 48px;
   justify-self: end;
   width: 240px;
-  height: 48px;
 }
 
 .footer__social-list-item {
@@ -370,5 +338,5 @@
 .footer__social-icon {
   display: block;
   width: 48px;
-  height: 48px;
+  min-height: 48px;
 }
