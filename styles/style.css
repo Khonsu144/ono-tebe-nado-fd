@@ -20,7 +20,7 @@
   list-style: none;
 }
 
-.link__active{
+.link__active {
   text-decoration: none;
   list-style: none;
 }
@@ -173,11 +173,11 @@
   position: relative;
 }
 
-.card-link{
+.card-link {
   text-decoration: none;
 }
 
-.card__book{
+.card__book {
   padding-top: 30px;
 }
 
