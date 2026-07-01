@@ -14,7 +14,7 @@
   margin-right: 50px;
 }
 
-.address__text {
+.address__text__header {
   width: 233px;
 }
 
@@ -313,6 +313,10 @@
 .address__footer {
   justify-self: start;
   margin-left: 50px
+}
+
+.address__text__footer {
+  max-width: 260px;
 }
 
 .footer__menu {
