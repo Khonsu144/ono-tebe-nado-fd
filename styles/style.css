@@ -305,7 +305,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 180px;
-  padding-bottom: 82px;
+  padding-bottom: 94px;
   gap: 20px;
   align-items: start;
   min-width: 1100px;
