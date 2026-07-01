@@ -20,7 +20,7 @@
   list-style: none;
 }
 
-.link__glavnoe{
+.link__active{
   text-decoration: none;
   list-style: none;
 }
@@ -33,7 +33,6 @@
 
 .header__link {
   font-size: 18px;
-  text-decoration: underline;
 }
 
 .header__logo {
@@ -54,7 +53,7 @@
 
 .cover {
   position: relative;
-  background: url(/images/cover.jpg);
+  background: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -174,6 +173,10 @@
   position: relative;
 }
 
+.card-link{
+  text-decoration: none;
+}
+
 .card__book{
   padding-top: 30px;
 }
@@ -217,15 +220,15 @@
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 
